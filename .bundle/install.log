@@ -1,0 +1,8 @@
+# Logfile created on 2014-01-10 16:21:44 -0500 by logger.rb/44203
+I, [2014-01-10T16:21:44.875707 #45369]  INFO -- : 0:  rake (10.1.0) from /Users/michaelstone/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/specifications/default/rake-10.1.0.gemspec
+I, [2014-01-10T16:21:44.877299 #45369]  INFO -- : 0:  diff-lcs (1.2.5) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/diff-lcs-1.2.5.gemspec
+I, [2014-01-10T16:21:44.877718 #45369]  INFO -- : 0:  rspec-core (2.14.7) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/rspec-core-2.14.7.gemspec
+I, [2014-01-10T16:21:44.878042 #45369]  INFO -- : 0:  rspec-expectations (2.14.4) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/rspec-expectations-2.14.4.gemspec
+I, [2014-01-10T16:21:44.878349 #45369]  INFO -- : 0:  rspec-mocks (2.14.4) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/rspec-mocks-2.14.4.gemspec
+I, [2014-01-10T16:21:44.878653 #45369]  INFO -- : 0:  rspec (2.14.1) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/rspec-2.14.1.gemspec
+I, [2014-01-10T16:21:44.878964 #45369]  INFO -- : 0:  bundler (1.5.1) from /Users/michaelstone/.rvm/gems/ruby-2.1.0/specifications/bundler-1.5.1.gemspec
