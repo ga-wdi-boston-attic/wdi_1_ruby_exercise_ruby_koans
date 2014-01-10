@@ -1,0 +1,8 @@
+# Logfile created on 2014-01-10 16:12:58 -0500 by logger.rb/44203
+I, [2014-01-10T16:12:58.093358 #1559]  INFO -- : 0:  rake (10.1.0) from /Users/krmac/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/specifications/default/rake-10.1.0.gemspec
+I, [2014-01-10T16:12:58.093800 #1559]  INFO -- : 0:  diff-lcs (1.2.5) from /Users/krmac/.rvm/gems/ruby-2.1.0/specifications/diff-lcs-1.2.5.gemspec
+I, [2014-01-10T16:12:58.094150 #1559]  INFO -- : 0:  rspec-core (2.14.7) from /Users/krmac/.rvm/gems/ruby-2.1.0/specifications/rspec-core-2.14.7.gemspec
+I, [2014-01-10T16:12:58.094481 #1559]  INFO -- : 0:  rspec-expectations (2.14.4) from /Users/krmac/.rvm/gems/ruby-2.1.0/specifications/rspec-expectations-2.14.4.gemspec
+I, [2014-01-10T16:12:58.094780 #1559]  INFO -- : 0:  rspec-mocks (2.14.4) from /Users/krmac/.rvm/gems/ruby-2.1.0/specifications/rspec-mocks-2.14.4.gemspec
+I, [2014-01-10T16:12:58.095088 #1559]  INFO -- : 0:  rspec (2.14.1) from /Users/krmac/.rvm/gems/ruby-2.1.0/specifications/rspec-2.14.1.gemspec
+I, [2014-01-10T16:12:58.095409 #1559]  INFO -- : 0:  bundler (1.5.1) from /Users/krmac/.rvm/gems/ruby-2.1.0/specifications/bundler-1.5.1.gemspec
