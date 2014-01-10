@@ -6,6 +6,20 @@ functions and libraries. We also teach you culture by basing the koans on tests.
 Testing is not just something we pay lip service to, but something we
 live.  Testing is essential in your quest to learn and do great things in Ruby.
 
+== TL;DR Instructions
+
+I've already set this up for you mostly. Fork this repo and then clone it.
+
+You need to run `bundle install` once from the bash prompt to ensure you have all the right things installed.
+
+Then, open all the files in sublime run `rake` from the bash prompt. The files that matter are in the `koans` directory. Alter these files by editing the blanks to make the tests pass. 
+
+Deeply consider the changes that you've made and what is happening for each one you pass. Do not rush. 
+
+*Every time you complete a new set of Koans make a git commit and then push to Github. The first time you push, open a Pull Request. Then additional commits will come into this PR. This will help me see how you're doing.*
+
+If you need to start over, run `rake regen`. 
+
 == The Structure
 
 The koans are broken out into areas by file, hashes are covered in +about_hashes.rb+,
