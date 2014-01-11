@@ -1,0 +1,8 @@
+# Logfile created on 2014-01-10 17:48:51 -0500 by logger.rb/44203
+I, [2014-01-10T17:48:51.920953 #2124]  INFO -- : 0:  rake (10.1.0) from /Users/laurefischer/.rvm/rubies/ruby-2.1.0/lib/ruby/gems/2.1.0/specifications/default/rake-10.1.0.gemspec
+I, [2014-01-10T17:48:51.921891 #2124]  INFO -- : 0:  diff-lcs (1.2.5) from /Users/laurefischer/.rvm/gems/ruby-2.1.0/specifications/diff-lcs-1.2.5.gemspec
+I, [2014-01-10T17:48:51.922282 #2124]  INFO -- : 0:  rspec-core (2.14.7) from /Users/laurefischer/.rvm/gems/ruby-2.1.0/specifications/rspec-core-2.14.7.gemspec
+I, [2014-01-10T17:48:51.922655 #2124]  INFO -- : 0:  rspec-expectations (2.14.4) from /Users/laurefischer/.rvm/gems/ruby-2.1.0/specifications/rspec-expectations-2.14.4.gemspec
+I, [2014-01-10T17:48:51.923012 #2124]  INFO -- : 0:  rspec-mocks (2.14.4) from /Users/laurefischer/.rvm/gems/ruby-2.1.0/specifications/rspec-mocks-2.14.4.gemspec
+I, [2014-01-10T17:48:51.923430 #2124]  INFO -- : 0:  rspec (2.14.1) from /Users/laurefischer/.rvm/gems/ruby-2.1.0/specifications/rspec-2.14.1.gemspec
+I, [2014-01-10T17:48:51.923828 #2124]  INFO -- : 0:  bundler (1.5.1) from /Users/laurefischer/.rvm/gems/ruby-2.1.0/specifications/bundler-1.5.1.gemspec
