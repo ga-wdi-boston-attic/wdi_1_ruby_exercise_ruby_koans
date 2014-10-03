@@ -1,15 +1,14 @@
 require File.expand_path(File.dirname(__FILE__) + '/neo')
-
 # Greed is a dice game where you roll up to five dice to accumulate
 # points.  The following "score" function will be used to calculate the
 # score of a single roll of the dice.
 #
 # A greed roll is scored as follows:
 #
-# * A set of three ones is 1000 points
+# * A set of three ones is 1000 points => [1,1,1,x,x] = 1000 points
 #
 # * A set of three numbers (other than ones) is worth 100 times the
-#   number. (e.g. three fives is 500 points).
+#   number. (e.g. three fives is 500 points). [2,2,2,X,X] = 200 points......[3,3,3,X,X] => 300 points
 #
 # * A one (that is not part of a set of three) is worth 100 points.
 #
@@ -30,7 +29,28 @@ require File.expand_path(File.dirname(__FILE__) + '/neo')
 # Your goal is to write the score method.
 
 def score(dice)
-  # You need to write this method
+  score = 0
+    dice.empty? ? nil : score
+
+    count3 = false
+    triple_num = 0
+    dice.each { |i| 
+      dice.count(i) >= 3 ? count3 = true : break
+      count3 ? triple_num = i : break
+    }
+    if count3
+      if triple_num == 1
+        score += 1000
+      else
+        score += triple_num * 100
+      end
+      3.times {dice.slice!(dice.index(triple_num))}
+    end
+    dice.each{ |x|
+      x == 1 ? score += 100 : score
+      x == 5 ? score += 50 : score
+    }
+  return score
 end
 
 class AboutScoringProject < Neo::Koan
