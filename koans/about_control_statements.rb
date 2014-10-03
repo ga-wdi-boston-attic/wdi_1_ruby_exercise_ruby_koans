@@ -128,7 +128,7 @@ class AboutControlStatements < Neo::Koan
     for item in array
       result << item.upcase
     end
-    assert_equal ["fish", "AND", "CHIPS"], result
+    assert_equal ["FISH", "AND", "CHIPS"], result
   end
 
   def test_times_statement
@@ -136,7 +136,7 @@ class AboutControlStatements < Neo::Koan
     10.times do
       sum += 1
     end
-    assert_equal __, sum
+    assert_equal 10, sum
   end
 
 end
