@@ -1,5 +1,5 @@
 require 'pry'
-
+=begin
 def score(dice)
   score = 0
   dice.empty? ? nil : score
@@ -42,3 +42,33 @@ score([1,1,1,1]) # assert_equal 1100,
 score([1,1,1,1,1]) # assert_equal 1200, 
 score([1,1,1,5,1]) # assert_equal 1150, 
 
+=end
+class Dog7
+  attr_reader :name
+
+  def initialize(initial_name)
+    @name = initial_name
+  end
+
+  def get_self
+    self
+  end
+
+  def to_s
+    @name
+  end
+
+  def inspect
+    "<Dog named '#{name}'>"
+  end
+end
+
+
+fido = Dog7.new("Fido")
+
+fidos_self = fido.get_self
+puts fidos_self
+
+array = [1,2,3]
+puts array.inspect
+puts  "STRING".to_s
