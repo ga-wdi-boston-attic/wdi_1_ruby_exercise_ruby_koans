@@ -7,13 +7,20 @@ require File.expand_path(File.dirname(__FILE__) + '/neo')
 # end
 
 class DiceSet
+  
   def initialize
 
   end
 
   def roll(integer)
-    dice = [1,2,3,4,5,6]
+    @dice = Array.new(integer){ |index| rand(1..integer) }
+    # @dice = [1,2,3,4,5]
   end
+
+  def values
+    @dice
+  end
+
 end
 
 class AboutDiceProject < Neo::Koan
