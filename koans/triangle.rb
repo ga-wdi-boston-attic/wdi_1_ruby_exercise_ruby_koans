@@ -15,6 +15,21 @@
 #
 def triangle(a, b, c)
   # WRITE THIS CODE
+  #Saw this in SO when looking up how to read exceptions.
+
+  a, b, c = [a, b, c].sort
+  raise TriangleError if a <= 0 or a + b <= c
+  return :equilateral if a == c
+  return :isosceles if a == b or b == c
+  return :scalene
+  #JM's old code for reference.
+  # if a == b && b == c
+  #   :equilateral
+  # elsif a == b || b == c || a == c
+  #   :isosceles
+  # else
+  #   :scalene
+  # end
 end
 
 # Error class used in part 2.  No need to change this code.
