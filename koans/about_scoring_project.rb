@@ -29,9 +29,37 @@ require File.expand_path(File.dirname(__FILE__) + '/neo')
 #
 # Your goal is to write the score method.
 
-def score(dice)
-  # You need to write this method
+def less_than_3 (arr)
+  return 0 if arr.length == 0
+
+  arr.map do |num|
+    case num
+      when 1 then 100
+      when 5 then 50
+      else 0
+    end
+  end.reduce(:+)
 end
+
+def score(dice)
+   return 0 if dice.empty?
+  # You need to write this method
+  if dice.length < 3
+    less_than_3(dice)
+  else
+    set = dice.sort!.join("").match(/(\d)\1+{2}/)
+    if set
+      set[0][0].to_i == 1 ? total = 1000 : total = set[0][0].to_i * 100
+
+      dice_index = dice.each_index.select{|ind| dice[ind] == set[0][0].to_i}[0..2]
+      dice.each_index { |ind| dice[ind] = 0 if dice_index[0..2].include?(ind) }
+      total += less_than_3(dice)
+    else
+      less_than_3(dice)
+    end
+  end
+end
+
 
 class AboutScoringProject < Neo::Koan
   def test_score_of_an_empty_list_is_zero
