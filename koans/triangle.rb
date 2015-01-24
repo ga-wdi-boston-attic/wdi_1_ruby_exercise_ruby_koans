@@ -14,6 +14,9 @@
 #   about_triangle_project_2.rb
 #
 def triangle(a, b, c)
+  raise TriangleError, "can not have side length of zero" if a == 0 || b == 0 || c == 0
+  raise TriangleError, "can not have negative side length" if a < 0 || b < 0 || c < 0
+  raise TriangleError, "can not have negative side length" if a + b <= c || b + c <= a || a + c <= b
   if a == b && b == c
     :equilateral
   elsif a == b || a == c || b == c
@@ -21,6 +24,7 @@ def triangle(a, b, c)
   else
     :scalene
   end
+
 end
 
 # Error class used in part 2.  No need to change this code.
