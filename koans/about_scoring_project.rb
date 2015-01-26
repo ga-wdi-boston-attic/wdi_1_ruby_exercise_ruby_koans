@@ -31,6 +31,24 @@ require File.expand_path(File.dirname(__FILE__) + '/neo')
 
 def score(dice)
   # You need to write this method
+  score = 0
+  freq = dice.each_with_object(Hash.new(0)) { |count, word| word[count] += 1 }
+
+  if freq[1] >=3
+    score += 1000
+    freq[1] -=3
+  end
+
+  (2..6).each do |num|
+    if freq[num] >=3
+      score += num * 100
+      freq[num] -=3
+    end
+  end
+
+  score += 100 * freq[1]
+  score += 50 * freq[5]
+
 end
 
 class AboutScoringProject < Neo::Koan
